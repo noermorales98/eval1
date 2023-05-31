@@ -15,6 +15,7 @@ function agregarTarea(){
     const taskName = document.getElementById("nombre").value;
     //hacer un push a tareas
     ListaTareas.tareas.push(taskName)
+    //llamar a la funcion mostrar lista, se renderiza la vista cada vez que se ejecuta la funcion
     mostrarLista()
 }
 
@@ -30,6 +31,7 @@ muestre cada tarea como un elemento de lista
 
 function mostrarLista(){
     const listaTareas = document.getElementById("lista-tareas");
+    //limpiar la lista de tareas
     listaTareas.innerHTML = "";
     for(let i=0; i< ListaTareas.tareas.length;i++){
         //agregar un li
