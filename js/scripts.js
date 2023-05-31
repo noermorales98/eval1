@@ -13,6 +13,7 @@ const ListaTareas = {
 function agregarTarea(){
     //encontrar el valor del id nombre
     const taskName = document.getElementById("nombre").value;
+    //hacer un push a tareas
     ListaTareas.tareas.push(taskName)
     mostrarLista()
 }
